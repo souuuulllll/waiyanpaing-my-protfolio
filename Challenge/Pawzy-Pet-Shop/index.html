@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* Brand Primaries & Accents */
+        --color-primary: #fbc206;
+        --color-primary-hover: #e5b005;
+        --color-secondary: #5a31f4;
+        --color-accent-pink: #f26299;
+        --color-accent-orange: #f47e20;
+        --color-accent-green: #00a86b;
+
+        /* Backgrounds & Neutrals */
+        --color-bg-main: #ffffff;
+        --color-bg-light: #f7f8fc;
+        --color-bg-card: #f8fafc;
+
+        /* Typography & Borders */
+        --color-text-dark: #1e293b;
+        --color-text-muted: #64748b;
+        --color-border-light: #e2e8f0;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <section class="w-full lg:flex justify-evenly px-4 py-6 hidden">
+      <div class="">
+        <button
+          class="bg-primary text-left rounded-md py-2 font-semibold px-10"
+        >
+          Shop By Categories
+        </button>
+      </div>
+      <div class="flex gap-6 items-center">
+        <a class="hover:text-primary-hover font-bold" href="">Home</a>
+        <a class="hover:text-primary-hover font-bold" href="">Collection</a>
+        <a class="hover:text-primary-hover font-bold" href="">Products</a>
+        <a class="hover:text-primary-hover font-bold" href="">Other Pages</a>
+        <a class="hover:text-primary-hover font-bold" href="">Blog</a>
+      </div>
+      <div class="flex items-center">
+        <img src="images/telephone.png" alt="icon" class="w-4" />
+        <p>
+          Need Help? Call Us: <span class="font-semibold">+(123)-456-7890</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="bg-slate-400 h-10 w-full lg:hidden">
+      <div class="flex gap-6 items-center justify-center">
+        <a class="hover:text-primary-hover font-bold" href="">Home</a>
+        <a class="hover:text-primary-hover font-bold" href="">Collection</a>
+        <a class="hover:text-primary-hover font-bold" href="">Products</a>
+        <a class="hover:text-primary-hover font-bold" href="">Other Pages</a>
+        <a class="hover:text-primary-hover font-bold" href="">Blog</a>
+      </div>
+    </section> -->
+
+    <!-- <section class="w-full">
+      <div class="w-full relative">
+        <img
+          src="images/set1.jpg"
+          alt="img"
+          class="w-full absolute object-cover aspect-auto"
+        />
+        <div class="w-1/3 absolute top-35 right-3 grid">
+          <h2 class="text-bg-main">Pet Happiness</h2>
+          <h3 class="text-bg-main">Love, Care, Everyday Joy</h3>
+          <p class="text-bg-main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed
+            quaerat vero.
+          </p>
+          <button class="">Shop Now</button>
+        </div>
+      </div>
+    </section> -->
+
+    <section class=" w-full min-h-screen flex justify-start items-center bg-[url(images/set2.jpg)] bg-cover">
+
+      <div class="bg-orange-400/20 backdrop-blur-lg max-w-lg ml-3  p-8">
+          <h2 class="text-bg-main font-bold text-5xl">Pet Happiness</h2>
+          <h3 class="text-bg-main font-semibold text-xl mt-6">Love, Care, Everyday Joy</h3>
+          <p class="text-bg-main mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed
+            quaerat vero.
+          </p>
+          <button class="px-8 py-3 bg-primary rounded-4xl mt-6">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- <section class="w-full ">
+      <img
+        src="images/set1.jpg"
+        alt="img"
+        class="w-full object-cover aspect-auto"
+      />
+    </section> -->
+
+    <section
+      class="w-full min-h-screen lg:px-10 px- mt-8 bg-bg-main grid place-content-center"
+    >
+      <div class="max-w-full grid place-items-center">
+        <h2>Pet Picks</h2>
+        <h3>Everything Your Pet Needs</h3>
+        <div
+          class="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3 gap-8 mt-13 w-full place-items-center"
+        >
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img src="images/pets.png" alt="img" class="object-cover w-20" />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">Pet Walking</p>
+          </div>
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img
+                src="images/animal-shelter.png"
+                alt="img"
+                class="object-cover w-20"
+              />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">Boarding</p>
+          </div>
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img
+                src="images/dog-in-front-of-a-man.png"
+                alt="img"
+                class="object-cover w-20"
+              />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">Training</p>
+          </div>
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img
+                src="images/grooming.png"
+                alt="img"
+                class="object-cover w-20"
+              />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">Grooming</p>
+          </div>
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img
+                src="images/travel.png"
+                alt="img"
+                class="object-cover w-20"
+              />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">
+              Transportation
+            </p>
+          </div>
+          <div class="">
+            <div
+              class="fancy-border bg-border-light w-40 aspect-square grid place-items-center"
+            >
+              <img
+                src="images/stethoscope.png"
+                alt="img"
+                class="object-cover w-20"
+              />
+            </div>
+            <p class="text-center mt-4 hover:text-primary-hover">Pet Health</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="w-full h-auto grid md:grid-cols-2 md:grid-rows-2 mt-8 lg:px-10 px-4 gap-2"
+    >
+      <img
+        src="images/pexels-yana-kangal-494677995-17489774.jpg"
+        alt="img"
+        class="h-full row-span-2 w-full object-cover"
+      />
+      <img
+        src="images/pexels-mathew-coulton-2358287-4432260.jpg"
+        alt="img"
+        class="h-full object-cover"
+      />
+      <img
+        src="images/pexels-helenalopes-27175967.jpg"
+        alt="img"
+        class="h-full object-cover"
+      />
+    </section>
+
+    <section class="grid place-items-center w-full lg:px-10 px-4 mt-8">
+      <h2 class="font-semibold">Our Blog</h2>
+      <h3 class="font-extrabold text-4xl mt-8">From Lastest News</h3>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="">
+          <div class="relative rounded-xl overflow-hidden">
+            <img
+              src="images/pexels-helen1-16395150.jpg"
+              alt="img"
+              class="object-cover rounded-lg aspect-video"
+            />
+            <button
+              class="bg-bg-main absolute bottom-5 left-2 px-3 py-1 rounded-2xl"
+            >
+              Vinova Theme
+            </button>
+          </div>
+          <p class="mt-4 text-text-muted text-xs">June 28, 2026</p>
+          <h4 class="my-4 text-text-dark font-extrabold text-xl">
+            Keeping Pets Active Daily
+          </h4>
+          <p class="text-text-muted text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            molestiae optio, corrupti quis sapiente unde et...
+          </p>
+        </div>
+        <div class="">
+          <div class="relative rounded-xl overflow-hidden">
+            <img
+              src="images/pexels-pet-foto-644780685-17742005.jpg"
+              alt="img"
+              class="object-cover rounded-lg aspect-video"
+            />
+            <button
+              class="bg-bg-main absolute bottom-5 left-2 px-3 py-1 rounded-2xl"
+            >
+              Vinova Theme
+            </button>
+          </div>
+          <p class="mt-4 text-text-muted text-xs">June 28, 2026</p>
+          <h4 class="my-4 text-text-dark font-extrabold text-xl">
+            Keeping Pets Active Daily
+          </h4>
+          <p class="text-text-muted text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            molestiae optio, corrupti quis sapiente unde et...
+          </p>
+        </div>
+        <div class="">
+          <div class="relative rounded-xl overflow-hidden">
+            <img
+              src="images/pexels-canan-yasar-11679605-6196818.jpg"
+              alt="img"
+              class="object-cover rounded-lg aspect-video"
+            />
+            <button
+              class="bg-bg-main absolute bottom-5 left-2 px-3 py-1 rounded-2xl"
+            >
+              Vinova Theme
+            </button>
+          </div>
+          <p class="mt-4 text-text-muted text-xs">June 28, 2026</p>
+          <h4 class="my-4 text-text-dark font-extrabold text-xl">
+            Keeping Pets Active Daily
+          </h4>
+          <p class="text-text-muted text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            molestiae optio, corrupti quis sapiente unde et...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full grid place-items-center lg:px-10 px-4 mt-8">
+      <h2 class="font-semibold">Our Services</h2>
+      <h3 class="font-extrabold text-4xl mt-8">Care You Can Trust</h3>
+
+      <div
+        class="w-full grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-6 md:grid-cols-2 md:grid-rows-2 md:mx-6 mt-12 mx-4"
+      >
+        <img
+          src="images/two-pets.webp"
+          alt="img"
+          class="object-cover lg:col-start-2 lg:col-end-2 md:col-span-2 w-full md:px-12"
+        />
+
+        <div
+          class="grid place-items-center gap-6 px-8 md:row-start-2 lg:row-start-1"
+        >
+          <div class="flex justify-center gap-4">
+            <img
+              src="images/pet-grooming.png"
+              alt="icon"
+              class="w-20 object-cover"
+            />
+            <div class="">
+              <h4 class="font-bold text-xl">Bathing & Grooming</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-4">
+            <img
+              src="images/hair-cut.png"
+              alt="icon"
+              class="w-20 object-cover"
+            />
+            <div class="">
+              <h4 class="font-bold text-xl">Haircut & Styling</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-4">
+            <img
+              src="images/walking-the-dog.png"
+              alt="icon"
+              class="w-20 object-cover"
+            />
+            <div class="">
+              <h4 class="font-bold text-xl">Dog Walking</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-6 place-items-center px-8 lg:col-start-3">
+          <div class="flex justify-center gap-4">
+            <div class="order-2">
+              <h4 class="font-bold text-xl">Nail & Paw Care</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+            <img
+              src="images/nail-clipper.png"
+              alt="icon"
+              class="order-1 w-20 object-cover"
+            />
+          </div>
+          <div class="flex justify-center gap-4">
+            <div class="order-2">
+              <h4 class="font-bold text-xl">Pet Hotel Stay</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+            <img
+              src="images/pet-hotel.png"
+              alt="icon"
+              class="w-20 object-cover"
+            />
+          </div>
+          <div class="flex justify-center gap-4">
+            <div class="order-2">
+              <h4 class="font-bold text-xl">Health Checkup</h4>
+              <p class="mt-3 text-text-muted text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                laboriosam excepturi mollitia.
+              </p>
+            </div>
+            <img
+              src="images/healthy.png"
+              alt="icon"
+              class="w-20 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full lg:px-10 px-4 mt-8">
+      <h3 class="">Our Gallery</h3>
+      <div class="flex justify-between items-center mt-4">
+        <h4 class="text-4xl font-bold">Follow Us On Instagram</h4>
+        <div class="flex justify-center p-5 gap-2">
+          <img
+            src="images/instagram/instagram.png"
+            alt="img"
+            class="w-10 object-cover"
+          />
+          <div class="">
+            <h4 class="font-semibold">@Nova-Creative</h4>
+            <p class="text-text-muted text-sm">26 Follower</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-5 gap-6 overflow-x-scroll">
+        <img
+          src="images/instagram/pexels-alexandra-bilham-41703424-7329892.jpg"
+          alt="img"
+          class="w-full aspect-square object-cover rounded-xl"
+        />
+        <img
+          src="images/instagram/pexels-barnabas-davoti-31615494-9855635.jpg"
+          alt="img"
+          class="w-full aspect-square object-cover rounded-xl"
+        />
+        <img
+          src="images/instagram/pexels-ferhat-kocakaya-218644751-19237874.jpg"
+          alt="img"
+          class="w-full aspect-square object-cover rounded-xl"
+        />
+        <img
+          src="images/instagram/pexels-helen1-16395150.jpg"
+          alt="img"
+          class="w-full aspect-square object-cover rounded-xl"
+        />
+        <img
+          src="images/instagram/pexels-pet-foto-644780685-17856902.jpg"
+          alt="img"
+          class="w-full aspect-square object-cover rounded-xl"
+        />
+      </div>
+    </section>
+
+    <section class="my-6 grid place-items-center lg:px-10 px-4">
+      <h2 class="font-semibold">Smart Picks</h2>
+      <h3 class="font-extrabold text-4xl mt-8">Pet Service Packages</h3>
+
+      <div class="grid lg:grid-cols-3 gap-6 p-6">
+        <div
+          class="border border-border-light rounded-xl py-14 px-7 grid place-items-center gap-6 hover:bg-primary-hover"
+        >
+          <img src="images/brush.png" alt="img" class="w-20 object-cover" />
+          <h3 class="text-2xl font-bold">Grooming Package</h3>
+          <h4 class="text-5xl font-semibold">
+            $25<span class="text-xl text-text-muted">/1 Sessions</span>
+          </h4>
+          <p class="text-text-muted text-center text-sm">
+            Clean, fresh, and happy – our grooming package gives your pet gentle
+            care with a bath and trim.
+          </p>
+          <button
+            class="w-full bg-primary rounded-2xl py-2 font-semibold hover:bg-primary-hover"
+          >
+            Choose Package
+          </button>
+        </div>
+
+        <div
+          class="border border-border-light rounded-xl py-14 px-8 grid place-items-center gap-6 hover:bg-primary-hover"
+        >
+          <img src="images/pets.png" alt="img" class="w-20 object-cover" />
+          <h3 class="text-2xl font-bold">Walking package</h3>
+          <h4 class="text-5xl font-semibold">
+            $45<span class="text-xl text-text-muted">/1 Sessions</span>
+          </h4>
+          <p class="text-text-muted text-center text-sm">
+            Daily walks for exercise, playful fun, and happy tails – all in one
+            trusted care package.
+          </p>
+          <button
+            class="w-full bg-primary rounded-2xl py-2 font-semibold hover:bg-primary-hover"
+          >
+            Choose Package
+          </button>
+        </div>
+
+        <div
+          class="border border-border-light rounded-xl py-14 px-8 grid place-items-center gap-6 hover:bg-primary-hover"
+        >
+          <img
+            src="images/stethoscope.png"
+            alt="img"
+            class="w-20 object-cover"
+          />
+          <h3 class="text-2xl font-bold">Hotel Package</h3>
+          <h4 class="text-5xl font-semibold">
+            $30<span class="text-xl text-text-muted">/1 Sessions</span>
+          </h4>
+          <p class="text-text-muted text-center text-sm">
+            A cozy, safe, and caring stay for your pet, with daily attention,
+            playtime, and restful comfort while you're away.
+          </p>
+          <button
+            class="w-full bg-primary rounded-2xl py-2 font-semibold hover:bg-primary-hover"
+          >
+            Choose Package
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-5 bg-bg-card lg:px-10 px-4">
+      <div class="my-8 grid text-center place-items-center gap-4">
+        <h3 class="text-3xl font-extrabold">Subscribe For Our Newsletter</h3>
+        <div class="flex-row gap-3 md:flex">
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            class="bg-border-light w-80 border-none p-2 text-text-muted rounded-2xl"
+          />
+          <button
+            class="bg-primary w-full md:w-auto mt-3 rounded-3xl px-4 py-3 hover:bg-primary-hover"
+          >
+            Subsrcibe
+          </button>
+        </div>
+      </div>
+      <hr class="border-border-light" />
+
+      <div
+        class="lg:flex lg:justify-evenly my-20 grid md:grid-cols-2 md:grid-rows-2 gap-8 px-8"
+      >
+        <div class="lg:w-1/4 w-full grid gap-2">
+          <div class="flex items-center gap-2">
+            <img src="images/dog.png" alt="icon" class="w-12 object-cover" />
+            <h2 class="text-4xl font-extrabold">Pawzy</h2>
+          </div>
+
+          <p>
+            Thank you for choosing us to be part of your pet’s journey. Your
+            trust means the world a lot to us.
+          </p>
+          <div class="flex gap-6">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+
+        <div class="grid items-center md:justify-items-center">
+          <div class="grid gap-3">
+            <h3 class="text-xl font-bold">Contact Us</h3>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>2357 Gordon Street,CA</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>+(123) - 456 -7890</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Pawzy@example.com</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>All Day: 9:00AM - 22:00PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:gap-3">
+          <h3 class="text-xl font-bold">Information</h3>
+          <p>Privacy Policy</p>
+          <p>Shipping & Delivery</p>
+          <p>Refund & Return</p>
+          <p>FAQ</p>
+        </div>
+
+        <div class="grid md:justify-items-center">
+          <div class="grid gap-3">
+            <h3 class="text-xl font-bold">Our Polices</h3>
+            <p>Order & Payment</p>
+            <p>Service Guidelines</p>
+            <p>Customer Support</p>
+            <p>Pet Saftey Standards</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-border-light" />
+      <div
+        class="flex items-center lg:justify-between flex-col lg:flex-row mt-6 px-6"
+      >
+        <p>Copyright © 2025 Nova Creative. All Rights Reserved.</p>
+        <div class="flex gap-2">
+          <img
+            src="images/footer/paypal.png"
+            alt="img"
+            class="w-9 aspect-square object-cover"
+          />
+          <img
+            src="images/footer/amex.png"
+            alt="img"
+            class="w-8 aspect-square object-cover"
+          />
+          <img
+            src="images/footer/card.png"
+            alt="img"
+            class="w-8 aspect-square object-cover"
+          />
+          <img
+            src="images/footer/credit-card.png"
+            alt="img"
+            class="w-8 aspect-square object-cover"
+          />
+          <img
+            src="images/footer/visa.png"
+            alt="img"
+            class="w-8 aspect-square object-cover"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.fancy-border{
+    border-radius: 72% 27% 57% 44% / 56% 50% 46% 47%;
+}
+
+/* .item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "one two"
+    "one three";
+    item1{
+        grid-area: one;
+    }
+    item2{
+        grid-area: two;
+    }
+    item3{
+        grid-area: three;
+    }
+} */

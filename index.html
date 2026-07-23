@@ -1,11 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-bg-primary: #f8fafc;
+        --color-text-primary: #0f172a; 
+        --color-text-muted: #475569; 
+        --color-accent-color: #0284c7; 
+      }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <section class="w-screen px-10 flex justify-between">
+      <h3 class="text-text-primary font-bold">WaiyanPaing</h3>
+      <div class="flex gap-6">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="">Project</a>
+      </div>
+    </section>
+
+    <section class="w-full px-10 mt-6 relative">
+
+     
+
+      <div class="grid grid-cols-2 gap-5 ">
+        <div class="w-full bg-slate-500">
+      <img src="assets/images/pf.jpg" alt="img" class="w-full aspect-video">
+      </div>
+      <div class="box bg-teal-500 overflow-hidden grid place-items-center p-6">
+      <h2 class="text-2xl font-bold">Hello I'm Wai Yan Paing</h2>
+      <h3 class="text-xl font-semi-bold">Fronted Developer</h3>
+      <p class="text-text-muted">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem
+        dolore accusantium, consectetur quis porro odio sunt
+        ipsam culpa non voluptatum?
+      </p>
+      <div class="flex mt-8 gap-4">
+        <img
+          src="assets/images/facebook.png"
+          alt="icon"
+          class="w-6 aspect-auto"
+        />
+        <img
+          src="assets/images/instagram.png"
+          alt="icon"
+          class="w-6 aspect-auto"
+        />
+        <img
+          src="assets/images/linkedin.png"
+          alt="icon"
+          class="w-6 aspect-auto"
+        />
+      </div>
+      </div>
+      
+      </div>
+      
+    </section>
+
     
-</body>
+
+    <section class="px-10 mt-6 ">
+      
+      <h3 class="text-2xl">View My Project</h3>
+      <div class="grid grid-cols-3 grid-rows-2 gap-6">
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+        </div>
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+        </div>
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+        </div>
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+        </div>
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+        </div>
+        <div class="">
+          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <div class="flex gap-5 items-center justify-center mt-4">
+          <p>Pawzy Pet Shop</p>
+          <button class="bg-slate-500 rounded-xl px-4 py-2"><a href="Challenge/Pawzy-Pet-Shop">Demo</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="grid bg-accent-color mt-8 p-4 place-items-center">
+      <p>Copyright 20026 © portfolio | Designed by Wai Yan Paing</p>
+    </footer>
+  </body>
 </html>

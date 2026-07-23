@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Hanken";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Light-red-tran: hsl(0, 87%, 97%);
+  --Orangey-yellow-tran: hsl(39, 77%, 95%);
+  --Green-teal-tran: hsl(167, 83%, 95%);
+  --Cobalt-blue-tran: hsl(233, 55%, 94%);
+  /* Gradients */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+p {
+  font-size: 18px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken";
+}
+.main-page {
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--Pale-blue);
+  display: grid;
+
+  @media (min-width: 768px) {
+    place-items: center;
+  }
+  .container {
+    max-width: 700px;
+    /* height: 100%; */
+    background-color: var(--White);
+    display: grid;
+    border-radius: 20px;
+    overflow: hidden;
+    @media (min-width: 768px) {
+      width: 600px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      /* background-color: var(--Dark-gray-blue); */
+      background-image: linear-gradient(
+        var(--Light-slate-blue),
+        var(--Light-royal-blue)
+      );
+      display: grid;
+      place-items: center;
+      padding: 1rem 2rem;
+      /* z-index: 2; */
+      border-radius: 20px;
+      h4 {
+        color: var(--Light-lavender);
+      }
+      .card-circle {
+        width: 120px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        /* background-color: var(--Violet-blue); */
+        overflow: hidden;
+        background-image: linear-gradient(
+          to top,
+          var(--Persian-blue),
+          var(--Violet-blue)
+        );
+        .card-msg {
+          display: grid;
+          place-items: center;
+          h2 {
+            color: var(--White);
+            font-weight: 800;
+            font-size: 3rem;
+          }
+          p {
+            color: var(--Light-lavender);
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+      h3 {
+        color: var(--White);
+      }
+      p {
+        color: var(--Light-lavender);
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+    .box {
+      background-color: var(--White);
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      h4 {
+        margin-right: 9rem;
+        color: var(--Dark-gray-blue);
+        font-weight: 700;
+      }
+      .item {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-rows: auto;
+        /* border: 1px solid; */
+        gap: 1rem;
+        /* grid-template-columns: repeat(2,1fr); */
+        .box-item {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3.5rem;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid transparent;
+          background-color: var(--Light-red-tran);
+          &:nth-child(2) {
+            background-color: var(--Orangey-yellow-tran);
+            p{
+              color: var(--Orangey-yellow)
+            }
+          }
+          &:nth-child(3) {
+            background-color: var(--Green-teal-tran);
+          }
+          &:nth-child(4) {
+            background-color: var(--Cobalt-blue-tran);
+          }
+
+          .content1 {
+            display: flex;
+            img {
+              margin-right: 0.5rem;
+            }
+            /* p {
+              color: var(--Light-red);
+              &:nth-child(2) {
+                color: var(--Orangey-yellow);
+              }
+              &:nth-child(3) {
+                color: var(--Green-teal);
+              }
+              &:nth-child(4) {
+                color: var(--Cobalt-blue);
+              }
+            } */
+          }
+          .content2 {
+            color: var(--Dark-gray-blue);
+          }
+        }
+      }
+      button {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: var(--Dark-gray-blue);
+        color: var(--White);
+        &:hover {
+          background-color: var(--Cobalt-blue);
+        }
+      }
+    }
+  }
+}

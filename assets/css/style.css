@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --bg-primary: #F8FAFC;      /* 60% - Main canvas background */
+  --text-primary: #0F172A;    /* 30% - Titles & strong text */
+  --text-muted: #475569;      /* 30% - Subtitles & body paragraphs */
+  --accent-color: #0284C7;    /* 10% - Buttons & hover links */
+}
+
+/* dark mode */
+ :root {
+  --bg-primary: #0F172A;      /* 60% - Deep Midnight Navy canvas background */
+  --text-primary: #F8FAFC;    /* 30% - Crisp Slate White for titles & strong text */
+  --text-muted: #94A3B8;      /* 30% - Softer Gray-Blue for subtitles & body paragraphs */
+  --accent-color: #38BDF8;    /* 10% - Vibrant Electric Sky Blue for buttons & active states */
+}
+
+*{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.box{
+  border-radius: 29% 71% 31% 69% / 71% 26% 74% 29%;
+}
+
