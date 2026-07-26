@@ -4,105 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
-        --color-bg-primary: #f8fafc;
-        --color-text-primary: #0f172a; 
-        --color-text-muted: #475569; 
-        --color-accent-color: #0284c7; 
+        --color-bg-primary: #0F172A;
+        --color-navbar: #1E293B;
+        --color-card: #1A2A4A;
+        --color-text-primary: #F8FAFC;
+        --color-text-muted: #CBD5E1;
+        --color-accent-color: #0284c7;
+        --color-btn-bg: #38bdf8;
+        --color-btn-hover: #7dd3fc;
       }
     </style>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    <section class="w-screen px-10 flex justify-between">
+  <body class="bg-bg-primary">
+    <section class="w-screen px-10  bg-navbar py-5 flex items-center justify-between ">
       <h3 class="text-text-primary font-bold">WaiyanPaing</h3>
       <div class="flex gap-6">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="">Project</a>
+        <a href="#" class="text-text-primary">Home</a>
+        <a href="#about" class="text-text-primary">About</a>
+        <a href="#project" class="text-text-primary">Project</a>
       </div>
     </section>
 
-    <section class="w-full px-10 mt-6 relative">
-
-     
-
-      <div class="grid grid-cols-2 gap-5 ">
-        <div class="w-full bg-slate-500">
-      <img src="assets/images/pf.jpg" alt="img" class="w-full aspect-video">
+    <section class="w-full px-10 my-8 relative">
+      <div class="grid grid-cols-2 gap-5">
+        
+        <div
+          class="w-full animate__animated animate__lightSpeedInLeft box bg-card/60 shadow-2xl border border-[#334155] backdrop-blur-xl overflow-hidden grid place-items-center p-6"
+        >
+          <h2 class="text-2xl text-center text-text-primary font-bold">Hello I'm Wai Yan Paing</h2>
+          <h3 class="text-xl text-btn-bg font-semi-bold">Fronted Developer</h3>
+          <p class="text-text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            dolorem dolore accusantium, consectetur quis porro odio sunt ipsam
+            culpa non voluptatum?
+          </p>
+          <div class="flex mt-8 gap-4">
+            <img
+              src="assets/images/facebook.png"
+              alt="icon"
+              class="w-6 aspect-auto"
+            />
+            <img
+              src="assets/images/instagram.png"
+              alt="icon"
+              class="w-6 aspect-auto"
+            />
+            <img
+              src="assets/images/linkedin.png"
+              alt="icon"
+              class="w-6 aspect-auto"
+            />
+          </div>
+        </div>
+        <div class="w-full rounded-3xl overflow-hidden animate__animated animate__lightSpeedInRight">
+          <img
+            src="assets/images/pf.jpg"
+            alt="img"
+            class="w-full aspect-video"
+          />
+        </div>
       </div>
-      <div class="box bg-teal-500 overflow-hidden grid place-items-center p-6">
-      <h2 class="text-2xl font-bold">Hello I'm Wai Yan Paing</h2>
-      <h3 class="text-xl font-semi-bold">Fronted Developer</h3>
-      <p class="text-text-muted">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem
-        dolore accusantium, consectetur quis porro odio sunt
-        ipsam culpa non voluptatum?
-      </p>
-      <div class="flex mt-8 gap-4">
-        <img
-          src="assets/images/facebook.png"
-          alt="icon"
-          class="w-6 aspect-auto"
-        />
-        <img
-          src="assets/images/instagram.png"
-          alt="icon"
-          class="w-6 aspect-auto"
-        />
-        <img
-          src="assets/images/linkedin.png"
-          alt="icon"
-          class="w-6 aspect-auto"
-        />
-      </div>
-      </div>
-      
-      </div>
-      
     </section>
 
-    
 
-    <section class="px-10 mt-6 ">
-      
-      <h3 class="text-2xl">View My Project</h3>
-      <div class="grid grid-cols-3 grid-rows-2 gap-6">
+
+    <section id="about" class="px-10 mt-12">
+      <div class="grid place-items-center">
+        <h3 class="text-text-primary text-xl font-bold animate__animated animate__bounce">My Skill</h3>
+        
+        <p class="text-text-primary text-center text-3xl font-extrabold animate__animated animate__bounce">I Work Hard to Improve My Skill Regularly</p>
+      </div>
+      <div class="px-8 grid gap-4 animate__animated animate__backInLeft">
         <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
-          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+          <div class="flex justify-between">
+            <span class="text-text-primary">Html</span>
+            <span class="text-text-primary">95%</span>
+          </div>
+          <div class="w-full bg-white h-1 rounded-full overflow-hidden">
+            <div class="bg-[#00d2ff] h-full rounded-full w-[95%]"></div>
+          </div>
         </div>
         <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
-          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+          <div class="flex justify-between">
+            <span class="text-text-primary">Css</span>
+            <span class="text-text-primary">90%</span>
+          </div>
+          <div class="w-full bg-white h-1 rounded-full overflow-hidden">
+            <div class="bg-[#00d2ff] h-full rounded-full w-[90%]"></div>
+          </div>
         </div>
         <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
-          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+          <div class="flex justify-between">
+            <span class="text-text-primary">Tailwind</span>
+            <span class="text-text-primary">85%</span>
+          </div>
+          <div class="w-full bg-white h-1 rounded-full overflow-hidden">
+            <div class="bg-[#00d2ff] h-full rounded-full w-[85%]"></div>
+          </div>
         </div>
         <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
-          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
+          <div class="flex justify-between">
+            <span class="text-text-primary">Javascript</span>
+            <span class="text-text-primary">70%</span>
+          </div>
+          <div class="w-full bg-white h-1 rounded-full overflow-hidden">
+            <div class="bg-[#00d2ff] h-full rounded-full w-[70%]"></div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="project" class="px-10 mt-12">
+      <h3 class="text-text-primary text-center text-3xl font-extrabold">View My Project</h3>
+      <div class="grid grid-cols-3 grid-rows-2 gap-6 mt-6">
         <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
-          <button><a href="Challenge/Pawzy-Pet-Shop">View</a></button>
-        </div>
-        <div class="">
-          <img src="assets/images/project/Screenshot 2026-07-23 125028.png" alt="img" />
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/recipe.png"
+            alt="img"
+            class="aspect-square "
+          />
+          </div>
           <div class="flex gap-5 items-center justify-center mt-4">
-          <p>Pawzy Pet Shop</p>
-          <button class="bg-slate-500 rounded-xl px-4 py-2"><a href="Challenge/Pawzy-Pet-Shop">Demo</a></button>
+            <p class="text-text-primary">Recipe-Page</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/recipe-page-main/">Demo</a>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/results-summary.png"
+            alt="img"
+            class="aspect-square"
+          />
+          </div>
+          <div class="flex gap-5 items-center justify-center mt-4">
+            <p class="text-text-primary">Results-Summary</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/results-summary-component-main/">Demo</a>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/stats-preview.png"
+            alt="img"
+            class="aspect-square"
+          />
+          </div>
+          <div class="flex gap-5 items-center justify-center mt-4">
+            <p class="text-text-primary">Stats-Preview-Card</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/stats-preview-card-component-main/">Demo</a>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/blog-preview.png"
+            alt="img"
+            class="aspect-square"
+          />
+          </div>
+          <div class="flex gap-5 items-center justify-center mt-4">
+            <p class="text-text-primary">Blog-Preview</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/blog-preview-card-main/">Demo</a>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/product-preview.png"
+            alt="img"
+            class="aspect-square"
+          />
+          </div>
+          <div class="flex gap-5 items-center justify-center mt-4">
+            <p class="text-text-primary">Product-Preview-Card</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/product-preview-card-component-main/">Demo</a>
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="border rounded-2xl overflow-hidden">
+          <img
+            src="assets/images/project/Screenshot 2026-07-23 125028.png"
+            alt="img"
+            class="aspect-square"
+          />
+          </div>
+          <div class="flex gap-5 items-center justify-center mt-4">
+            <p class="text-text-primary">Pawzy Pet Shop</p>
+            <button
+              class="bg-btn-bg rounded-xl px-4 py-2 hover:bg-btn-hover text-text-primary"
+            >
+              <a href="Challenge/Pawzy-Pet-Shop">Demo</a>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
     <footer class="grid bg-accent-color mt-8 p-4 place-items-center">
-      <p>Copyright 20026 © portfolio | Designed by Wai Yan Paing</p>
+      <p>Copyright 2026 © portfolio | Designed by Wai Yan Paing</p>
     </footer>
   </body>
 </html>
